@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <title>HTML Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
-<body>
-    <form>
+    <head>
+        <title>HTML Page</title>
+    </head>
+    <body>
         <fieldset>
-            <legend>Application Form</legend>
-            Full Name: <input name="fullName" type="text" required="required" placeholder="Enter your first name" />
-            Email Address: <input name="emailAddress" type="email" required="required" placeholder="Enter your e-mail address" />
-            Website: <input name="website" type="url" required="required" placeholder="Enter your website url" />
+            <legend>Create User ID</legend>
+            Domain: <input type="text" name="group" value="" />
+            <br />
+            Username: <input type="text" name="identity" value="" />
         </fieldset>
-        <input type="submit" value="Enroll" />
-    </form>
-</body>
+        <fieldset>
+            <legend>User Metadata</legend>
+            Department: <input type="text" name="dept" value="" />
+            <br />
+            Display Name: <input type="text" name="name" value="" />
+        </fieldset>
+        <fieldset>
+            <legend>Require Admin Approval</legend>
+            Yes: <input type="radio" name="approval" value="true" checked="checked" />
+            <br />
+            No: <input type="radio" name="approval" value="false" />
+        </fieldset>
+        <input type="submit" value="Click to Submit" />
+    </body>
 </html>
