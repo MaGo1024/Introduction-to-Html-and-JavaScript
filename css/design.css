@@ -1,4 +1,4 @@
-body {
+/*body {
     background-color: #fbf8e5;
     color: #6e7d9e;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -25,4 +25,36 @@ article > h2::after {
 footer {
     background-color: #A5B7C5;
     padding: 5px 10px;
+} */
+section, header, footer {
+    margin: 20px;
+    border: 1px black solid;
+    padding: 10px;
+    min-height: 60px;
+}
+
+.grayBackground {
+    background-color: #F0F2F1;
+}
+
+.tanBackground {
+    background-color: #D4C0A7;
+}
+
+.purpleBackground {
+    background-color: #B2A4A1;
+}
+
+header.purpleBackground {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+header.purpleBackground > h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section.grayBackground {
+    color: #938373;
 }
