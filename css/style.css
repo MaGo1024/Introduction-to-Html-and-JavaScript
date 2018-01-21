@@ -1,24 +1,40 @@
-article {
-    padding: 20px;
-    margin: 30px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2em;
-}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
+    background-color: #506566;
+    }
+    aside {
+    background-color: #23354B;
+    color: #CDB09E;
+    padding: 25px;
+    margin: 5px;
+    }
 
-article.simpleBorder {
-    border-width: thick;
-    border-color: #69D2E7;
-    border-style: solid;
-}
+    nav {
+        display: flex;
+        }
 
-article.complexBorder {
-    border-width: 15px;
-    border-color: #F38630;
-    border-style: inset solid;
-}
+    nav > aside {
+        flex: 1;
+        }
+    
+@media (max-width: 500px) {
+    nav {
+            display: block;
+        }
+    }
 
-article.shortBorder {
-    border: 25px #FA6900 dotted;
-    background-color: #E0E4CC;
-}
+@media print {
+    nav {
+        display: block;
+    }
+    body {
+        background-color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    aside {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        margin: 5px;
+    }
+    }
