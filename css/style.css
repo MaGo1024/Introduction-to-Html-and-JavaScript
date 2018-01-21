@@ -1,33 +1,13 @@
+/*article, section { border: thin black solid; }
+
 article {
-    font-weight: bold;
+    padding: 10px 300px 30px 20px;
 }
-
-article.spacer {
-    padding: 15px;
-    margin: 25px;
-    border: thin lightgray solid;
-}
-
-.babyBlueBackground {
-    background-color: #57BCF4;
-}
-
-.grayBackground {
-    background-color: #BFB3B5;
-}
-
-.blackBackground {
-    background-color: #242730;
-}
-
-.babyBlueText {
-    color: #57BCF4;
-}
-
-section.purpleText {
-    color: #923C9B;
-}
-
-article.purpleText {
-    color: #461559;
-}
+section {
+    margin: 50px;
+    }*/
+article, section {
+    border: thin black solid;
+    margin: 10px 20px;
+    padding: 20px 10px;
+    }
