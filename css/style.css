@@ -1,3 +1,24 @@
+/*@@font-face {
+    font-family: Caveat;
+    src: url('../fonts/caveat.ttf') format('truetype');
+}
+
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Caveat;
+}*/
+@font-face {
+    font-family: Chonburi;
+    src: url('../fonts/chonburi.ttf') format('truetype');
     }
+
+body{
+    font-family: Chonburi;
+}/*
+@font-face {
+    font-family: itim;
+    src: url('../fonts/chonburi.ttf') format('truetype');
+    }
+
+body{
+    font-family: Itim;
+}*/
