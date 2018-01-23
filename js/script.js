@@ -16,7 +16,7 @@ function  showTextSuccessful(result){
 function saveRadioValue(){
     var radioValue;
     var radioOption = document.getElementsByName('department');
-    for (var index = 0; index < radioOption.length; index++){
+    for (var index = 0; index < radioOption.length-1; index++){
         if (radioOption[index].checked){
             radioValue = radioOption[index].value;
             break;
