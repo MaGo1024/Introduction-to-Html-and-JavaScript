@@ -1,14 +1,19 @@
-function handleClick(callback) {
-    alert('This button has been clicked');
-    if (callback) {
-        callback();
-    }
+
+/*function handleClick() {
+    document.getElementById("dateTarget").innerHTML = Date();
+} */
+
+document.getElementById('dateButton').onclick = handleClick;
+function handleClick() {
+    document.getElementById('dateTarget').innerHTML = Date();
 }
 
-function doMore() {
-    alert('I could process more logic here');
+/* Named Identifier
+document.getElementById('dateButton').addEventListener('click', handleClick);
+function handleClick() {
+    document.getElementById('dateTarget').innerHTML = Date();
 }
-
-function doSomethingElse() {
-    document.writeln('Test Message');
-}
+Anonymous Identifier
+document.getElementById('dateButton').addEventListener('click', function handleClick() {
+    document.getElementById('dateTarget').innerHTML = Date();
+}); */
