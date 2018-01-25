@@ -1,24 +1,21 @@
-/*@@font-face {
-    font-family: Caveat;
-    src: url('../fonts/caveat.ttf') format('truetype');
+section {
+    margin: 35px;
+    padding: 35px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    font-family: Caveat;
-}*/
-@font-face {
-    font-family: Chonburi;
-    src: url('../fonts/chonburi.ttf') format('truetype');
-    }
+section.outermost {
+    background-color: #0E4241;
+}
 
-body{
-    font-family: Chonburi;
-}/*
-@font-face {
-    font-family: itim;
-    src: url('../fonts/chonburi.ttf') format('truetype');
-    }
+section.regular {
+    background-color: #256363;
+}
 
-body{
-    font-family: Itim;
-}*/
+section.innermost {
+    background-color: #217773;
+}

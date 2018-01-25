@@ -1,19 +1,14 @@
+var sections = document.getElementsByTagName('section');
 
-/*function handleClick() {
-    document.getElementById("dateTarget").innerHTML = Date();
-} */
-
-document.getElementById('dateButton').onclick = handleClick;
-function handleClick() {
-    document.getElementById('dateTarget').innerHTML = Date();
+for (var index = 0; index < sections.length; index++) {
+    sections[index].onclick = handleClick;
 }
 
-/* Named Identifier
-document.getElementById('dateButton').addEventListener('click', handleClick);
-function handleClick() {
-    document.getElementById('dateTarget').innerHTML = Date();
+function handleClick (event) {
+    console.log('current element: ' + this.className + ' | target element: ' + event.target.className);
+
+    if (this.className == 'regular') {
+        event.stopPropagation();
+        console.log('event propogation stopped');
+    }
 }
-Anonymous Identifier
-document.getElementById('dateButton').addEventListener('click', function handleClick() {
-    document.getElementById('dateTarget').innerHTML = Date();
-}); */
