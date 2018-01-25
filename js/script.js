@@ -1,14 +1,15 @@
-var sections = document.getElementsByTagName('section');
-
-for (var index = 0; index < sections.length; index++) {
-    sections[index].onclick = handleClick;
+function correctMethodName() {  
+    return "Output Message";
 }
 
-function handleClick (event) {
-    console.log('current element: ' + this.className + ' | target element: ' + event.target.className);
-
-    if (this.className == 'regular') {
-        event.stopPropagation();
-        console.log('event propogation stopped');
-    }
+try {
+    var result = wrongMethodName(3);
+    document.writeln(result);
 }
+catch (error) {
+    /*document.writeln('An error occurred');*/
+    document.writeln('<h3>Error:&nbsp;</h3><p>' + error + "</p>"); 
+}
+
+document.writeln(result);
+
